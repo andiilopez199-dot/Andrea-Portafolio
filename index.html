@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andrea L. - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Andrea López
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          andiilopez199@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">Sobre mí</a>
+          <a class="topmenu" href="#skills">Habilidades</a>
+          <a class="topmenu" href="#projects">Proyectos</a>
+          <a class="topmenu" href="#recommendations">Recomendaciones</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/carolina.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hola, Soy Andrea! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Soy economista y actualmente trabajo en una fundación, donde apoyo procesos relacionados con la gestión y el análisis de información.
+            Me gusta aprender nuevas cosas y desarrollar habilidades en diferentes áreas, especialmente en tecnología y herramientas digitales.
+            En este momento estoy creando mi propia página web como parte de mi proceso de aprendizaje en desarrollo web.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/css3.png"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/python_logo.png"/>
+          <h6>Python</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/git.png"/>
+          <h6>Git</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Análisis de datos financieros</h3>
+            <ul>
+              <li>Proyecto enfocado en el análisis de datos económicos para la toma de decisiones en una organización.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Dashboard de indicadores sociales</h3>
+            <ul>
+              <li>Desarrollo de un panel interactivo para visualizar indicadores sociales y apoyar la gestión de proyectos en una fundación.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+          <h3>Portafolio web personal</h3>
+          <ul>
+            <li>Creación de una página web tipo portafolio utilizando HTML, CSS y JavaScript como parte del aprendizaje en desarrollo web.</li>
+          </ul>
+          </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recomendaciones</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Andrea López es una persona muy dedicada y comprometida con todo lo que hace.
+          Tiene gran capacidad de aprendizaje y siempre busca mejorar sus habilidades constantemente. 
+          Es una persona proactiva, que se anticipa a los problemas y busca soluciones de manera eficiente.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trabajar con Carolina ha sido una experiencia muy positiva.
+          Es organizada, responsable y siempre entrega sus trabajos con alta calidad y excelente atención al detalle.
+          Además, es una persona muy colaborativa y siempre está dispuesta a ayudar a sus compañeros de equipo.
+          <span>&#8221;</span>
+        </div>
+        
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Es una persona muy curiosa y siempre está buscando nuevas formas de mejorar sus habilidades y conocimientos en el ámbito tecnológico.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Andrea es una persona muy proactiva y siempre busca soluciones creativas a los problemas que se le presentan.
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Deja una recomendación</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>¡Gracias por tu recomendación!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
